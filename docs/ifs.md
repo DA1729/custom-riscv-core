@@ -104,12 +104,13 @@ The **Instruction Fetch Module** (`ifs`) is responsible for managing the Program
 
 The .hex file should contain the instructions in hexadecimal format. Each line corresponds to a 32-bit instruction, represented by four 8-bit values (one per byte). An example of the .hex file format:
 
-| Example Instruction          | Description           |
-|-------------------------------|-----------------------|
-| `00 94 03 33`  // add t1, s0, s1 | Addition instruction  |
-| `41 39 03 B3`  // sub t2, s2, s3 | Subtraction instruction |
-| `03 5A 02 B3`  // mul t0, s4, s5 | Multiplication instruction |
-| `01 7B 4E 33`  // xor t3, s6, s7 | XOR instruction       |
+`
+00 94 03 33  // add t1, s0, s1
+41 39 03 B3  // sub t2, s2, s3
+03 5A 02 B3  // mul t0, s4, s5
+01 7B 4E 33  // xor t3, s6, s7
+`
+
 
 Each 8-bit chunk is loaded into the `mem_block` array in the `inst_mem` module.
 
