@@ -106,8 +106,11 @@ The .hex file should contain the instructions in hexadecimal format. Each line c
 
 
 `00 94 03 33  // add t1, s0, s1`
+
 `41 39 03 B3  // sub t2, s2, s3`
+
 `03 5A 02 B3  // mul t0, s4, s5`
+
 `01 7B 4E 33  // xor t3, s6, s7`
 
 
