@@ -20,7 +20,7 @@ module alu #(parameter N = 32) (
             default: y = 32'd0;
         endcase
 
-        zero = (result == 32'd0);
+        zero_f = (y == 32'd0);         // setting up the value of zero flag
     end
 
 endmodule

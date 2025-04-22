@@ -11,11 +11,10 @@ module reg_file #(
     input logic reset,              // the reset switch (you know what it does)
 
     output logic [N-1:0] read_data_1, // read data from address 1
-    output logic [N-1:0] read_data_2, // read data from address 2
+    output logic [N-1:0] read_data_2  // read data from address 2
 
     
-     
-);
+    );
     reg [31:0] reg_block [31:0];       // the register block 
 
     always_ff @(posedge clk or posedge reset) begin
