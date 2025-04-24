@@ -1,7 +1,7 @@
 module alu #(parameter N = 32) (
-    input  logic [(N-1):0] a, b,       //input operands
+    input  logic [(N-1):0] read_data_1, read_data_2,       //input operands
     input  logic [3:0]  OpCode,     //Operation Code or Control Code
-    output logic [(N-1):0] y,          //output of ALU
+    output logic [(N-1):0] write_data,          //output of ALU
     output logic        zero_f      //zero flag, active when the output is 0
     // i plan on adding more flags to the alu, like overflow, carry and negative
 );
