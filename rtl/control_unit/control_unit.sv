@@ -24,6 +24,7 @@ always_comb begin
             3'b000: begin
                 if (funct7  == 7'b0)
                     OpCode = 4'b0010; // ADD operation
+                if (funct7 == 7'b0100000)
                     OpCode = 4'b0100; // SUD operation
             end
                     3'b110: OpCode = 4'b0001; // OR
