@@ -8,19 +8,19 @@ module alu #(parameter N = 32) (
 
     always_comb begin
         case (OpCode)
-            4'b0001: y = a & b;                   // AND
-            4'b0010: y = a | b;                   // OR
-            4'b0100: y = a + b;                   // ADD
-            4'b1001: y = a - b;                   // SUB
-            4'b1100: y = (a < b) ? 32'd1 : 32'd0; // SLT
-            4'b0011: y = a << b;                  // SLL
-            4'b1010: y = a >> b;                  // SRL
-            4'b1110: y = a * b;                   // MUL
-            4'b0111: y = a ^ b;                   // XOR
-            default: y = 32'd0;
+            4'b0001: write_data = read_data_1 & read_data_2;                   // AND
+            4'b0010: write_data = read_data_1 | read_data_2;                   // OR
+            4'b0100: write_data = read_data_1 + read_data_2;                   // ADD
+            4'b1001: write_data = read_data_1 - read_data_2;                   // SUB
+            4'b1100: write_data = (read_data_1 < read_data_2) ? 32'd1 : 32'd0; // SLT
+            4'b0011: write_data = read_data_1 << read_data_2;                  // SLL
+            4'b1010: write_data = read_data_1 >> read_data_2;                  // SRL
+            4'b1110: write_data = read_data_1 * read_data_2;                   // MUL
+            4'b0111: write_data = read_data_1 ^ read_data_2;                   // XOR
+            default: write_data = 32'd0;
         endcase
 
-        zero_f = (y == 32'd0);         // setting up the value of zero flag
+        zero_f = (write_data == 32'd0);         // setting up the value of zero flag
     end
 
 endmodule
