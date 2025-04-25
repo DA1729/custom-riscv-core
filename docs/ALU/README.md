@@ -9,19 +9,18 @@ This is a parameterized Verilog HDL implementation of an **Arithmetic Logic Unit
 
 ## Inputs 
 
-|-----------------------------|---------------|--------------------------------------|
-| **Signal Name**             | **Width**     | **Description**                      |
-| `read_data_1`               | N bits        | First operand for ALU operations.    |
-| `read_data_2`               | N bits        | Second operand for ALU operations.   |
-| `OpCode`                    | 4 bits        | Operation code that selects the ALU operation. |
-
+| **Signal Name** | **Width** | **Description** |
+|-----------------|-----------|-----------------|
+| `read_data_1`   | N bits    | First operand for ALU operations. |
+| `read_data_2`   | N bits    | Second operand for ALU operations. |
+| `OpCode`        | 4 bits    | Operation code that selects the ALU operation. |
 
 ## Outputs
 
-|-----------------------------|---------------|--------------------------------------|
-| **Signal Name**             | **Width**     | **Description**                      |
-| `write_data`                | N bits        | Result of the selected ALU operation. |
-| `zero_f`                    | 1 bit         | Set to 1 if write_data is zero; otherwise 0. |
+| **Signal Name** | **Width** | **Description** |
+|-----------------|-----------|-----------------|
+| `write_data`    | N bits    | Result of the selected ALU operation. |
+| `zero_f`        | 1 bit     | Set to 1 if `write_data` is zero; otherwise 0. |
 
 
 ## Supported Operations
