@@ -2,7 +2,7 @@
 
 `include "./../ALU/alu.sv"                      // ALU module (we won't be calling it explicitly tho)
 `include "./../control_unit/control_unit.sv"    // control unit (explicitly called)
-`include "./../data_path/d_path.sv"          // data path module (explicitly called)
+`include "./../data_path/d_path.sv"             // data path module (explicitly called)
 `include "./../register_file/reg_file.sv"       // register file module (not explicitly called)
 `include "./../fetch_unit/ifu.sv"
 
@@ -24,8 +24,7 @@ logic write_en;                                 // output from the control unit
 
 ifu ifu_call (.clk(clk), .reset(reset), .inst_code(inst_code));      // from here, we get the instruction code
 
-// the R-Type instruction code has the following decomposition
-
+// the R-Type instruction code has the following decomposition:
 // inst_code[31:25] = funct7, controls which arithmetic operation to perform 
 // inst_code[24:20] = rs2, which is the pointer to the 2nd source register (or the value for read_add_2)
 // inst_code[19:15] = rs1, which is the pointer to the 1st soruce register (or the value for read_add_1)
