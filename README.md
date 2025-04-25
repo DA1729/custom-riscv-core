@@ -1,6 +1,6 @@
-# Custom RISC-V Based CPU (SystemVerilog)
+# Custom RISC-V Based CPU (SystemVerilog) (vOld32-RISC-V)
 
-Welcome to the repository for a simple **RISC-V based CPU** designed and implemented in SystemVerilog.
+Welcome to the repository for a simple **RISC-V based CPU** designed and implemented in SystemVerilog. I am obviously calling it vOld32 RISC-V Edition.
 This project is a modular build of a basic 32-bit processor, featuring core components such as an **ALU, Control Unit, Register File, Instruction Memory, and Data Path** — integrated through a clean and understandable structure.
 
 The processor currently supports **R-Type** instructions of the RISC-V ISA, with extensions planned for more instruction types and flags (like overflow, carry, and negative flags in ALU).
