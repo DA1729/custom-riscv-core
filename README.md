@@ -7,6 +7,7 @@ The processor currently supports **R-Type** instructions of the RISC-V ISA, with
 
 ## Repo Structure
 
+```text
 microcontroller-fpga/
 ├── README.md                  # Top-level overview and instructions
 ├── LICENSE                     # License file (MIT, GPL, etc.)
@@ -28,7 +29,7 @@ microcontroller-fpga/
 │   ├── fetch_unit/program.hex  # Instruction memory initialization
 │   ├── processor/processor.sv  # Top-level processor integration
 │   ├── register_file/reg_file.sv # Register file module`
-
+```
 
 ## Major Modules Overview
 
