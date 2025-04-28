@@ -10,7 +10,7 @@ The processor currently supports **R-Type** instructions of the RISC-V ISA, with
 ```text
 microcontroller-fpga/
 ├── README.md                  # Top-level overview and instructions
-├── LICENSE                     # License file (MIT, GPL, etc.)
+├── LICENSE                     # License file (MIT)
 
 ├── docs/                       # Documentation & design notes
 │   ├── ALU/README.md           # ALU logic and operations
